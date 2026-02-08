@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Projects from './sections/Projects';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app-container">
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+
+        <section id="contact" className="container" style={{ padding: '6rem 1rem', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Let's <span className="gradient-text">Connect</span></h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+            Open to new opportunities in QA Automation and SDET roles.
+          </p>
+          <a href="mailto:ramikodevving@gmail.com" style={{
+            padding: '1rem 3rem',
+            background: 'var(--primary)',
+            color: '#000',
+            fontWeight: 'bold',
+            borderRadius: '50px',
+            fontSize: '1.1rem'
+          }}>
+            Send Message
+          </a>
+        </section>
+
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
