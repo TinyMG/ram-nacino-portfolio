@@ -14,10 +14,10 @@ const Projects = () => {
             ]
         },
         {
-            title: 'KIXEYE - MySQL & API Test Automation',
+            title: 'KIXEYE - Game Testing & Data Validation',
             company: 'KIXEYE (Feb 2022 - Oct 2024)',
-            description: 'Led QA initiatives for complex client-driven test case creation and execution. Performed end-to-end data validation using SQL queries, API testing, and managed defect tracking through JIRA.',
-            tech: ['MySQL', 'API Testing', 'JIRA', 'SQL Server', 'TestRail'],
+            description: 'Performed comprehensive game testing, data validation, and functional testing for complex client specifications. Ensured data integrity through systematic validation and executed end-to-end test cases for game features.',
+            tech: ['Game Testing', 'Data Validation', 'Functional Testing', 'JIRA', 'TestRail'],
             achievements: [
                 'Validated database inputs for data integrity',
                 'Executed API and backend testing',
