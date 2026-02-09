@@ -25,9 +25,9 @@ const Projects = () => {
             ]
         },
         {
-            title: 'Stratpoint - Banking Mobile QA',
+            title: 'Stratpoint - HR Portal & Jobsite Automation',
             company: 'Stratpoint (Mar 2018 - Feb 2022)',
-            description: 'Automated large portions of regression test cases for banking mobile applications. Managed UAT automation initiatives and integrated QA processes into DevOps pipelines using Jenkins.',
+            description: 'Test automation of HR portal and jobsite applications. Automated large portions of regression test cases and managed UAT automation initiatives. Integrated QA processes into DevOps pipelines using Jenkins.',
             tech: ['Jenkins', 'Mobile Testing', 'Automation', 'DevOps'],
             achievements: [
                 'Automated regression test cases',
