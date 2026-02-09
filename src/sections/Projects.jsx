@@ -14,8 +14,8 @@ const Projects = () => {
             ]
         },
         {
-            title: 'Kinetic - MySQL & API Test Automation',
-            company: 'Kinetic (Feb 2022 - Oct 2024)',
+            title: 'KIXEYE - MySQL & API Test Automation',
+            company: 'KIXEYE (Feb 2022 - Oct 2024)',
             description: 'Led QA initiatives for complex client-driven test case creation and execution. Performed end-to-end data validation using SQL queries, API testing, and managed defect tracking through JIRA.',
             tech: ['MySQL', 'API Testing', 'JIRA', 'SQL Server', 'TestRail'],
             achievements: [
@@ -25,8 +25,8 @@ const Projects = () => {
             ]
         },
         {
-            title: 'StrategicPoint - Banking Mobile QA',
-            company: 'StrategicPoint (Mar 2018 - Feb 2022)',
+            title: 'Stratpoint - Banking Mobile QA',
+            company: 'Stratpoint (Mar 2018 - Feb 2022)',
             description: 'Automated large portions of regression test cases for banking mobile applications. Managed UAT automation initiatives and integrated QA processes into DevOps pipelines using Jenkins.',
             tech: ['Jenkins', 'Mobile Testing', 'Automation', 'DevOps'],
             achievements: [
