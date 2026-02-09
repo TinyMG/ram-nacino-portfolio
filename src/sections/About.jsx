@@ -21,9 +21,9 @@ const About = () => {
                     marginRight: 'auto',
                     textAlign: 'center'
                 }}>
-                    I am a detail-oriented QA Engineer with a passion for delivering bug-free software.
-                    With experience in both manual and automated testing, I specialize in creating
-                    efficient test frameworks that reduce release cycles and improve overall product quality.
+                    Senior QA Automation Engineer with over 9 years of hands-on experience in web, API, mobile, and performance testing.
+                    I specialize in building and maintaining automation frameworks, modernizing legacy QA processes, and collaborating with
+                    engineering teams to achieve reliable, high-quality releases.
                 </p>
 
                 <div style={{
@@ -34,35 +34,53 @@ const About = () => {
                 }}>
                     {/* Skill Group 1 */}
                     <div>
-                        <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Automation Testing</h3>
+                        <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Automation & Tools</h3>
                         <ul style={{ listStyle: 'none', color: 'var(--text-primary)' }}>
-                            <li>✅ Selenium WebDriver</li>
-                            <li>✅ Cypress & Playwright</li>
-                            <li>✅ Appium (Mobile)</li>
-                            <li>✅ API Testing (Postman/RestAssured)</li>
+                            <li>✅ Selenium (Java)</li>
+                            <li>✅ Playwright (TypeScript)</li>
+                            <li>✅ Appium (Mobile Testing)</li>
+                            <li>✅ API Testing (RestAssured, Postman)</li>
+                            <li>✅ Performance Testing (JMeter)</li>
                         </ul>
                     </div>
 
                     {/* Skill Group 2 */}
                     <div>
-                        <h3 style={{ color: 'var(--secondary)', marginBottom: '1rem' }}>Manual Testing</h3>
+                        <h3 style={{ color: 'var(--secondary)', marginBottom: '1rem' }}>Languages & Database</h3>
                         <ul style={{ listStyle: 'none', color: 'var(--text-primary)' }}>
-                            <li>✅ Functional & UI Testing</li>
-                            <li>✅ Regression Testing</li>
-                            <li>✅ Cross-Browser Testing</li>
-                            <li>✅ Jira & TestRail Management</li>
+                            <li>✅ Java, Python, JavaScript</li>
+                            <li>✅ SQL (MySQL, SQL Server, MongoDB)</li>
+                            <li>✅ C# & DevOps Engineer</li>
+                            <li>✅ Data Validation & Migration Testing</li>
                         </ul>
                     </div>
 
                     {/* Skill Group 3 */}
                     <div>
-                        <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Languages & Tools</h3>
+                        <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>CI/CD & Management</h3>
                         <ul style={{ listStyle: 'none', color: 'var(--text-primary)' }}>
-                            <li>✅ Java, Python, JavaScript</li>
-                            <li>✅ Git & GitHub</li>
-                            <li>✅ CI/CD (Jenkins, GitHub Actions)</li>
-                            <li>✅ SQL & Database Testing</li>
+                            <li>✅ Jenkins, Git, Docker</li>
+                            <li>✅ Jira, TestRail, XRay</li>
+                            <li>✅ CI/CD Pipeline Integration</li>
+                            <li>✅ Agile/Scrum Methodologies</li>
                         </ul>
+                    </div>
+                </div>
+
+                {/* Certifications */}
+                <div style={{ marginTop: '3rem', textAlign: 'center' }}>
+                    <h3 style={{ color: 'var(--primary)', marginBottom: '1.5rem' }}>Certifications</h3>
+                    <div className="glass-panel" style={{
+                        padding: '1.5rem',
+                        display: 'inline-block',
+                        background: 'rgba(0, 243, 255, 0.05)'
+                    }}>
+                        <p style={{ fontSize: '1.1rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>
+                            🏆 ISTQB Foundation Level
+                        </p>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                            Certificate Number: 18-CTFL-0083713A
+                        </p>
                     </div>
                 </div>
             </div>

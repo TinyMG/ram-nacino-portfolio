@@ -28,7 +28,7 @@ const Hero = () => {
                     marginRight: 'auto'
                 }}>
                     Hi, I'm <strong style={{ color: 'var(--text-primary)' }}>Ram Nacino</strong>.
-                    I bridge the gap between development and quality assurance with robust test automation strategies.
+                    Senior QA Automation Engineer with 9+ years of experience in web, API, mobile, and performance testing.
                 </p>
 
                 <div style={{
@@ -53,7 +53,7 @@ const Hero = () => {
                         onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                         onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                     >
-                        View Projects
+                        View Experience
                     </a>
 
                     <a href="#contact" style={{
@@ -82,11 +82,11 @@ const Hero = () => {
                     </a>
                 </div>
 
-                {/* Tech Stack Pills w/ simple animation */}
+                {/* Tech Stack Pills */}
                 <div style={{ marginTop: '4rem' }}>
-                    <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Tech Stack</p>
+                    <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Core Technologies</p>
                     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
-                        {['Selenium', 'Cypress', 'Java', 'Python', 'JavaScript', 'Jenkins', 'Postman'].map((tech) => (
+                        {['Selenium', 'Playwright', 'Appium', 'Java', 'Python', 'JavaScript', 'SQL', 'Jenkins'].map((tech) => (
                             <span key={tech} style={{
                                 padding: '0.5rem 1rem',
                                 background: 'var(--bg-glass)',
