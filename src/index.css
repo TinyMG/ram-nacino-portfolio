@@ -1,22 +1,26 @@
+@import './design/utilities.css';
+
 :root {
   /* Color Palette - Dark & Premium */
-  --bg-primary: #050505;
-  --bg-secondary: #0a0a0a;
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
   --bg-glass: rgba(255, 255, 255, 0.05);
-  
+
   --text-primary: #ffffff;
   --text-secondary: #a3a3a3;
-  --text-accent: #00f3ff; /* Cyan Neon */
-  
+  --text-accent: #00f3ff;
+  /* Cyan Neon */
+
   --primary: #00f3ff;
   --primary-glow: rgba(0, 243, 255, 0.5);
-  --secondary: #bd00ff; /* Purple Neon */
-  
+  --secondary: #bd00ff;
+  /* Purple Neon */
+
   --border-color: rgba(255, 255, 255, 0.1);
-  
+
   /* Typography */
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+
   /* Spacing */
   --section-padding: 4rem 2rem;
   --container-max-width: 1200px;

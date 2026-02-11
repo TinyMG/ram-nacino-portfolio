@@ -1,108 +1,61 @@
 import React from 'react';
+import { Container, Button, Badge } from '../components/ui';
 
 const Hero = () => {
     return (
-        <section id="home" className="container" style={{
-            minHeight: '90vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingTop: '80px'
-        }}>
-            <div style={{ textAlign: 'center', maxWidth: '800px' }}>
+        <section id="home" className="min-h-screen flex items-center justify-center" style={{ paddingTop: '80px' }}>
+            <Container className="text-center max-w-3xl">
                 <h1 style={{
                     fontSize: 'clamp(3rem, 5vw, 5rem)',
-                    marginBottom: '1.5rem',
                     lineHeight: '1.1',
                     fontWeight: '800'
-                }}>
+                }} className="mb-6">
                     Building Quality through <span className="gradient-text">Automation</span>
                 </h1>
 
                 <p style={{
                     fontSize: 'clamp(1.2rem, 2vw, 1.5rem)',
-                    color: 'var(--text-secondary)',
-                    marginBottom: '2.5rem',
-                    maxWidth: '600px',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                }}>
-                    Hi, I'm <strong style={{ color: 'var(--text-primary)' }}>Ram Nacino</strong>.
+                    maxWidth: '600px'
+                }} className="text-secondary mx-auto mb-8">
+                    Hi, I'm <strong className="text-primary">Ram Nacino</strong>.
                     Senior QA Automation Engineer with 9+ years of experience in web, API, mobile, and performance testing.
                 </p>
 
-                <div style={{
-                    display: 'flex',
-                    gap: '1.5rem',
-                    justifyContent: 'center',
-                    flexWrap: 'wrap'
-                }}>
-                    <a href="#projects" style={{
-                        padding: '1rem 2.5rem',
-                        fontSize: '1.1rem',
-                        background: 'var(--primary)',
-                        border: 'none',
-                        borderRadius: '50px',
-                        cursor: 'pointer',
-                        color: '#000',
-                        fontWeight: 'bold',
-                        textDecoration: 'none',
-                        transition: 'transform 0.2s',
-                        display: 'inline-block'
-                    }}
-                        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+
+                <div className="flex gap-4 justify-center flex-wrap mb-8">
+                    <Button
+                        variant="primary"
+                        size="md"
+                        onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
                     >
                         View Experience
-                    </a>
+                    </Button>
 
-                    <a href="#contact" style={{
-                        padding: '1rem 2.5rem',
-                        fontSize: '1.1rem',
-                        background: 'rgba(255, 255, 255, 0.05)',
-                        border: '1px solid var(--primary)',
-                        borderRadius: '50px',
-                        cursor: 'pointer',
-                        color: 'var(--primary)',
-                        fontWeight: 'bold',
-                        textDecoration: 'none',
-                        transition: 'all 0.2s',
-                        display: 'inline-block'
-                    }}
-                        onMouseOver={(e) => {
-                            e.currentTarget.style.background = 'rgba(0, 243, 255, 0.1)';
-                            e.currentTarget.style.transform = 'scale(1.05)';
-                        }}
-                        onMouseOut={(e) => {
-                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                            e.currentTarget.style.transform = 'scale(1)';
-                        }}
+                    <Button
+                        variant="secondary"
+                        size="md"
+                        onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
                     >
                         Contact Me
-                    </a>
+                    </Button>
                 </div>
 
                 {/* Tech Stack Pills */}
-                <div style={{ marginTop: '4rem' }}>
-                    <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Core Technologies</p>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
-                        {['Selenium', 'Playwright', 'Appium', 'Java', 'Python', 'JavaScript', 'SQL', 'Jenkins'].map((tech) => (
-                            <span key={tech} style={{
-                                padding: '0.5rem 1rem',
-                                background: 'var(--bg-glass)',
-                                border: '1px solid var(--border-color)',
-                                borderRadius: '20px',
-                                color: 'var(--text-secondary)',
-                                fontSize: '0.9rem'
-                            }}>
+                <div className="mt-20">
+                    <p className="text-secondary mb-6 text-base tracking-widest uppercase font-bold">Core Technologies</p>
+                    <div className="flex flex-wrap justify-center gap-3">
+                        {['Selenium', 'Playwright', 'Appium', 'Java', 'Python', 'JavaScript', 'TypeScript', 'SQL', 'Jenkins'].map((tech) => (
+                            <Badge key={tech} variant="default">
                                 {tech}
-                            </span>
+                            </Badge>
                         ))}
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 };
 
 export default Hero;
+
+

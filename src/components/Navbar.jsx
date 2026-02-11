@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Container } from './ui';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,33 +18,28 @@ const Navbar = () => {
             left: '50%',
             transform: 'translateX(-50%)',
             width: '90%',
-            maxWidth: '1200px',
-            zIndex: 1000,
-            padding: '1rem 2rem',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center'
+            maxWidth: 'var(--container-max-width)',
+            zIndex: 1000
         }}>
-            <div className="logo" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-                <span className="gradient-text">Ramiko_Dev</span>
-            </div>
+            <Container className="flex justify-between items-center py-4">
+                <div className="text-2xl font-bold">
+                    <span className="gradient-text">Ramiko_Dev</span>
+                </div>
 
-            {/* Desktop Menu */}
-            <ul style={{
-                display: 'flex',
-                gap: '2rem',
-                listStyle: 'none'
-            }} className="desktop-menu">
-                {navLinks.map((link) => (
-                    <li key={link.name}>
-                        <a href={link.href} style={{ color: 'var(--text-primary)', fontSize: '1rem' }}>
-                            {link.name}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+                {/* Desktop Menu */}
+                <ul className="flex gap-8" style={{ listStyle: 'none' }}>
+                    {navLinks.map((link) => (
+                        <li key={link.name}>
+                            <a href={link.href} className="text-primary text-base">
+                                {link.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </Container>
         </nav>
     );
 };
 
 export default Navbar;
+
