@@ -29,6 +29,14 @@ const Button = ({
 
     const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
+    if (props.href) {
+        return (
+            <a className={buttonClasses} {...props}>
+                {children}
+            </a>
+        );
+    }
+
     return (
         <button className={buttonClasses} {...props}>
             {children}

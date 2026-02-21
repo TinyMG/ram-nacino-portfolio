@@ -35,12 +35,15 @@ const Hero = () => {
                     <Button
                         variant="secondary"
                         size="md"
-                        onClick={() => window.open('/resume.pdf', '_blank')}
+                        href={`${import.meta.env.BASE_URL}resume.pdf`}
+                        download="Ram_Nacino_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Download Resume
                     </Button>
 
-                     <Button
+                    <Button
                         variant="ghost"
                         size="md"
                         onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
