@@ -3,7 +3,6 @@ import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Projects from './sections/Projects';
-import Testimonials from './sections/Testimonials';
 import './App.css';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <Hero />
         <About />
         <Projects />
-        <Testimonials />
 
         <section id="contact" className="container" style={{ padding: '6rem 1rem', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Let's <span className="gradient-text">Connect</span></h2>
