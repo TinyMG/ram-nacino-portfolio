@@ -16,9 +16,9 @@ const Button = ({
     const baseStyles = 'inline-block font-bold cursor-pointer transition-all rounded-full';
 
     const variants = {
-        primary: 'bg-[var(--primary)] text-[#000] hover-scale',
-        secondary: 'bg-transparent border border-[var(--primary)] text-[var(--primary)] hover-glow',
-        ghost: 'bg-[rgba(255,255,255,0.05)] text-[var(--text-primary)] hover-glow',
+        primary: 'btn-primary',
+        secondary: 'btn-secondary',
+        ghost: 'btn-ghost',
     };
 
     const sizes = {
@@ -27,7 +27,7 @@ const Button = ({
         lg: 'px-8 py-4 text-lg',
     };
 
-    const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+    const buttonClasses = `btn ${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
     if (props.href) {
         return (
