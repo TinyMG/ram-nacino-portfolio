@@ -18,7 +18,8 @@ const Hero = () => {
                     maxWidth: '600px'
                 }} className="text-secondary mx-auto mb-8">
                     Hi, I'm <strong className="text-primary">Ram Nacino</strong>.
-                    Senior QA Automation Engineer with 9+ years of experience in web, API, mobile, and performance testing.
+                    Senior QA Automation Engineer with 9+ years of expertise in web, API, mobile, and performance testing.
+                    I build robust automation frameworks that accelerate release cycles and ensure software quality.
                 </p>
 
 
@@ -28,11 +29,19 @@ const Hero = () => {
                         size="md"
                         onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
                     >
-                        View Experience
+                        View Projects
                     </Button>
 
                     <Button
                         variant="secondary"
+                        size="md"
+                        onClick={() => window.open('/resume.pdf', '_blank')}
+                    >
+                        Download Resume
+                    </Button>
+
+                     <Button
+                        variant="ghost"
                         size="md"
                         onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
                     >
@@ -57,5 +66,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
