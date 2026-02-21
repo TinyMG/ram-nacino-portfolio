@@ -33,7 +33,7 @@ const Hero = () => {
                     </Button>
 
                     <Button
-                        variant="secondary"
+                        variant="primary"
                         size="md"
                         href={`${import.meta.env.BASE_URL}resume.pdf`}
                         download="Ram_Nacino_Resume.pdf"
@@ -44,7 +44,7 @@ const Hero = () => {
                     </Button>
 
                     <Button
-                        variant="ghost"
+                        variant="primary"
                         size="md"
                         onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
                     >
