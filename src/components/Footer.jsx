@@ -12,7 +12,7 @@ const Footer = () => {
                 </p>
                 <div className="flex justify-center gap-6">
                     <a href="https://github.com/TinyMG" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ram-nacino-placeholder" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="mailto:ramikodevving@gmail.com">Email</a>
                 </div>
             </Container>
@@ -21,4 +21,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
